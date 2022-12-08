@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css';
+import Link from './Link'
 
 function Sidebar({setopenBar, openBar}) {
     const closeSideBar = () =>{
@@ -12,11 +13,8 @@ function Sidebar({setopenBar, openBar}) {
                 <h3>ARTSY.</h3>
                 <span onClick={closeSideBar}>X</span>
          </div>
-         <div className="navLink">
-            <p>Home</p>
-            <p>Auctions</p>
-            <p>Marketplace</p>
-            <p>Drops</p>
+         <div className="navMobileLink">
+            <Link />
          </div>
          
     </div>
