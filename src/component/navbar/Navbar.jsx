@@ -1,7 +1,9 @@
 import React, {useState, useEffect}from 'react'
-import { FaBars, FaSearch, FaShoppingCart } from "react-icons/fa";
+import { FaBars, FaSearch, FaShoppingCart,  FaRegBell } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Sidebar from './Sidebar';
+import NavLink from './NavLink';
 
 function Navbar() {
 
@@ -28,20 +30,38 @@ function Navbar() {
       <nav>
         {
               windowSize <= 500 && 
-              <>
-              <div className="navIcon" onClick={openSideBar}>
-                  <FaBars />
-              </div>
-              <div className="navText">
-              <h3>ARTSY. {windowSize}</h3>
-          </div>
-          <div className="navCart">
-              <FaSearch className='searchIcon' />
-              <FaShoppingCart className='cartIcon' />
-          </div>
-          </>
+              <div className='mobileView'>
+                  <div className="navIcon" onClick={openSideBar}>
+                      <FaBars />
+                  </div>
+                  <div className="navText">
+                  <h3>ARTSY.</h3>
+               </div>
+               <div className="navCart">
+                  <FaSearch className='searchIcon' />
+                  <FaShoppingCart className='cartIcon' />
+                  <FaRegBell />
+                </div>
+           </div>
         }
           
+          {
+            windowSize > 500 &&
+            <div className='desktopView'>
+              <div className="navText">
+                  <h3>ARTSY.</h3>
+              </div>
+              <div className="navLink">
+                <NavLink />
+              </div>
+              <div className="navIcon">
+                  <FaSearch className='searchIcon' />
+                  <FaShoppingCart className='cartIcon' />
+                  <FaRegBell />
+              </div>
+              
+            </div>
+          }
          
       </nav>
       {

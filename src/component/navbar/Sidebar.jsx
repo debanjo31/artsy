@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css';
-import Link from './Link'
+import NavLink from './NavLink';
 
 function Sidebar({setopenBar, openBar}) {
     const closeSideBar = () =>{
@@ -14,7 +14,7 @@ function Sidebar({setopenBar, openBar}) {
                 <span onClick={closeSideBar}>X</span>
          </div>
          <div className="navMobileLink">
-            <Link />
+            <NavLink />
          </div>
          
     </div>

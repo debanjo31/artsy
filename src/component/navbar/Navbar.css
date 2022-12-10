@@ -1,7 +1,10 @@
 nav{
+    padding: 10px;
+}
+
+.mobileView{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 .navIcon{
@@ -26,18 +29,17 @@ nav{
     padding: 10px;
 }
 
-.searchIcon{
+.mobileView .searchIcon{
     height: 16.720123291015625px;
     width: 16.71949005126953px;
     left: 5px;
     top: 5px;
     border-radius: 0px;
     display: inline-block;
-    
     margin-right: 20px;
 }
 
-.cartIcon{
+.mobileView .cartIcon{
     height: 18px;
     width: 21px;
     display: inline-block;
@@ -83,3 +85,55 @@ li{
 .navbarListItemNameActive{
     font-weight: bold;
 }
+
+.desktopView{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.desktopView .navText h3{
+width: 113px;
+height: 90px;
+font-family: 'STIX Two Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 90px;
+}
+
+.desktopView .navbarListItemNameActive{
+    text-decoration: underline;
+}
+
+.desktopView .navLink ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+       
+}
+
+.desktopView .navLink ul li{
+        line-height: 52px;
+        height: 32px;
+        font-family: Satoshi;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 10px;  
+        line-height: 90px;  
+        cursor: pointer    
+    }
+
+.desktopView .navIcon{
+      display: flex;
+      width: 10vw;
+      gap: 10px;   
+      margin-top: 30px;   
+      cursor: pointer;
+    
+    }
+
