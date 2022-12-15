@@ -49,9 +49,28 @@ color: #333333;
     padding: 20px 0px;
 }
 
+@media screen  and (max-width : 500px) {
+    .featuredProduct .product{
+        flex-direction: column;
+    }
+
+    .featuredProduct .product:nth-child(3){
+        display: none;
+    }
+        
+    .product-img{
+        max-width: 100%;
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
+    
+}
 
 .featuredProduct .product:nth-child(3){
-    display: flex;
+    display: flex; 
     padding: 20px 0px;
     flex-direction: row-reverse;
 }
@@ -68,6 +87,7 @@ color: #333333;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     
 }
 
@@ -96,8 +116,35 @@ font-size: 20px;
 line-height: 30px;
 /* identical to box height */
 color: #333333;
+margin-bottom: 20px;
 }
 
 .peopleimage img:nth-child(n + 2){
-    font-size: 2000px;
+    display: inline-block;
+    margin-left: -20px;
+}
+
+
+.product .prodcutarrow{
+    border: 1px solid #333333;
+    border-radius: 50%;
+    padding: 15px;
+    vertical-align: super;
+}
+
+.product .arrowicon{
+    display: inline-block;
+    width: 20px;
+}
+
+.product .imageText{
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 32px;
+vertical-align: super;
+color: #333333;
+margin: 0px 20px;
 }
