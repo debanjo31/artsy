@@ -11,6 +11,7 @@ function Product({img}) {
     <div className='product'>
         <div className="img">
             <img src={img} className='product-img' alt="The Boolean Egyptian" />
+            
         </div>
         <div className="product-text">
             <h3>The Boolean Egyptian</h3>

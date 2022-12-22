@@ -25,17 +25,6 @@ function NavLink() {
               Home
             </p>
           </li>
-          <li className='navbarListItem' onClick={() => navigate('/auction')}>
-            <p
-              className={
-                pathMatchRoute('/auction')
-                  ? 'navbarListItemNameActive'
-                  : 'navbarListItemName'
-              }
-            >
-              Auctions
-            </p>
-          </li>
           <li className='navbarListItem' onClick={() => navigate('/marketplace')}>
             <p
               className={
@@ -45,6 +34,17 @@ function NavLink() {
               }
             >
               Marketplace
+            </p>
+          </li>
+          <li className='navbarListItem' onClick={() => navigate('/auction')}>
+            <p
+              className={
+                pathMatchRoute('/auction')
+                  ? 'navbarListItemNameActive'
+                  : 'navbarListItemName'
+              }
+            >
+              Auctions
             </p>
           </li>
           <li className='navbarListItem' onClick={() => navigate('/drop')}>
