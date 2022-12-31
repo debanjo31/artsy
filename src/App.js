@@ -8,7 +8,7 @@ import Drop from './component/pages/Drop'
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
        <Router>
         
         <Routes>

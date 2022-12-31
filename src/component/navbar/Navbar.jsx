@@ -1,6 +1,5 @@
 import React, {useState, useEffect}from 'react'
 import { FaBars, FaSearch, FaShoppingCart,  FaRegBell } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Sidebar from './Sidebar';
 import NavLink from './NavLink';
@@ -29,7 +28,7 @@ function Navbar() {
     <div>
       <nav>
         {
-              windowSize <= 500 && 
+              windowSize <= 768 && 
               <div className='mobileView'>
                   <div className="navIcon" onClick={openSideBar}>
                       <FaBars />
@@ -46,7 +45,7 @@ function Navbar() {
         }
           
           {
-            windowSize > 500 &&
+            windowSize > 768 &&
             <div className='desktopView'>
               <div className="navText">
                   <h3>ARTSY.</h3>
